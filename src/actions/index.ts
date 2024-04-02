@@ -47,8 +47,7 @@ export async function createSnippet(formState: {message:string} ,formData: FormD
       },
     });
 
-    // Redirect the user back to the root route
-    redirect('/');
+    
       
     } catch (err) {
       if(err instanceof Error){
@@ -61,4 +60,7 @@ export async function createSnippet(formState: {message:string} ,formData: FormD
         }
       }
     }
+
+    // Redirect the user back to the root route
+    redirect('/');
   }
